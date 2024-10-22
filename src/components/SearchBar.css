@@ -10,7 +10,7 @@
 
 .search-results {
 	position: absolute;
-	top: 50;
+	top: 50px;
 	left: 0;
 	width: 100%;
 	display: flex;
@@ -74,7 +74,7 @@
 /* Estilos para Pantallas Grandes */
 @media (max-width: 2000px) and (min-width: 1440px) {
    .search-results {
-      top: 35;
+      top: 35px;
       border: solid 3px var(--lightgray);
    }
    
@@ -108,7 +108,7 @@
 /* Estilos para Laptops */
 @media (max-width: 1439px) and (min-width: 1024px) {
    .search-results {
-      top: 35;
+      top: 35px;
       border: solid 3px var(--lightgray);
    }
    
@@ -146,7 +146,7 @@
 /* Estilos para Tablets */
 @media (max-width: 1023px) and (min-width: 768px) {
    .search-results {
-      top: 35;
+      top: 35px;
       border: solid 3px var(--lightgray);
    }
    
