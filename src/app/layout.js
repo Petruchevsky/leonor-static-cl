@@ -1,8 +1,6 @@
 import TopBar from "@/components/TopBar";
 import Header from "../components/Header";
 import "../components/Header.css"
-import Link from "next/link";
-import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "@fontsource/red-hat-display";
@@ -17,7 +15,7 @@ export const metadata = {
 		title: "Leonor-B Homeopatía Online",
 		description: "Bienvenido(a) a mi Sitio!",
 		images: {
-			url: "https://res.cloudinary.com/dsvlzbctv/image/upload/v1696360859/logoconfondo_71c9548045.png",
+			url: "https://res.cloudinary.com/dsvlzbctv/image/upload/v1729616548/lb-ico_dw9gdz.jpg",
 		},
 		locale: "es_CL",
 		type: "website",
@@ -32,7 +30,6 @@ export default function RootLayout({ children }) {
 				<Header />
 				<Navbar />
 				{children}
-				{/* <Toaster /> */}
 				<Footer />
 			</body>
 		</html>

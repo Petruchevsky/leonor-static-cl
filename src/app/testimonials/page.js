@@ -4,10 +4,8 @@ import MySlider from "@/components/MySlider";
 
 export const metadata = {
 	title: "Testimonios",
-	description: "Mira lo que la Gente Dice!",
+	description: "Mira lo que la gente dice!",
 };
-
-// const data = []
 
 const data = [
 	{
