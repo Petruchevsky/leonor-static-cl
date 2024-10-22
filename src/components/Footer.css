@@ -371,6 +371,7 @@ footer {
 	
 	.leonorBcontainerFooter {
 		line-height: 2.8rem;
+		padding-top: 1rem;
 	}
 	
 	.leonorBFooter {
@@ -455,6 +456,7 @@ footer {
 	.leonorContainerFooter {
 		gap: .7rem;
 		margin-bottom: .7rem;
+		padding-top: 1rem;
 	}
 
 	.leonorBcontainerFooter {
