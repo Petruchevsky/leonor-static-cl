@@ -115,8 +115,6 @@
     .what-is-h {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 1rem;
         width: 100%;
     }
@@ -129,6 +127,6 @@
     }
 
     .homeo-text h1 {
-        text-align: center;
+        text-align: left;
     }
 }    
