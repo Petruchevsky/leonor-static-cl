@@ -35,6 +35,13 @@ function SearchBar() {
 
    const cleanInput = () => {
       setShowResults(false)
+      setQuery("")
+   }
+
+   const handleKeyDown = (e) => {
+      if (e.key === "Enter") {
+         e.preventDefault();
+      }
    }
 
 	return (
@@ -47,9 +54,10 @@ function SearchBar() {
 					placeholder="Qué Estás Buscando...?"
 					value={query}
 					onChange={handleChange}
+               onKeyDown={handleKeyDown}
 					required
 				/>
-				<input type="submit" value="Ir" />
+				{/* <input type="submit" value="Ir" /> */}
 				{filteredPosts.length > 0 && showResults && (
 					<section className="search-results active">
 						{filteredPosts.map((p) => (
