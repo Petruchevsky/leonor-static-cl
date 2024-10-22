@@ -1,0 +1,219 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K */
+.search {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+   position: relative;
+}
+
+.search-results {
+	position: absolute;
+	top: 50;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 9999;
+	border: solid 5px var(--lightgray);
+	border-radius: 10px;
+	visibility: hidden;
+	background-color: var(--lightpink);
+	margin: 1rem auto;
+}
+
+.search-results.active {
+	visibility: visible;
+}
+
+.title-result {
+	text-align: center;
+	font-size: 1.8rem;
+	background-color: var(--pink);
+	color: white;
+	padding: .5rem 1.5rem;
+	margin: 1rem auto;
+	width: fit-content;
+	border-radius: 50px;
+}
+
+.result > a {
+	font-size: 2rem;
+}
+
+.result > a > p {
+	font-size: 18px !important;
+	line-height: 2rem;
+	margin-bottom: 1rem;
+}
+
+.result > a > h5 {
+   color: var(--darkgray);
+   font-size: 20px;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+   justify-content: center;
+   align-items: center;
+	text-align: center;
+	font-family: "red hat display";
+	font-size: 2.4rem;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border-radius: 10px;
+}
+
+.result:hover {
+	background-color: var(--beige);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+   .search-results {
+      top: 35;
+      border: solid 3px var(--lightgray);
+   }
+   
+   .search {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.title-result {
+		font-size: 1.4rem;
+      padding: .3rem 1rem;
+      margin: .5rem auto;
+	}
+
+	.result > a {
+		font-size: 1.6rem;
+	}
+
+	.result > a > p {
+		font-size: 12px !important;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+   .result > a > h5 {
+      font-size: 14px;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+   .search-results {
+      top: 35;
+      border: solid 3px var(--lightgray);
+   }
+   
+   .search {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+   .result {
+      padding: 1rem;
+   }
+
+	.title-result {
+		font-size: 1.4rem;
+      padding: .3rem 1rem;
+      margin: .5rem auto;
+	}
+
+	.result > a {
+		font-size: 1.6rem;
+	}
+
+	.result > a > p {
+		font-size: 12px !important;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+   .result > a > h5 {
+      font-size: 14px;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+   .search-results {
+      top: 35;
+      border: solid 3px var(--lightgray);
+   }
+   
+   .search {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+   .result {
+      padding: 1rem;
+   }
+
+	.title-result {
+		font-size: 1.4rem;
+      padding: .3rem 1rem;
+      margin: .5rem auto;
+	}
+
+	.result > a {
+		font-size: 1.6rem;
+	}
+
+	.result > a > p {
+		font-size: 12px !important;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+   .result > a > h5 {
+      font-size: 14px;
+   }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+   .search-results {
+      top: 35;
+      border: solid 3px var(--lightgray);
+   }
+   
+   .search {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+   .result {
+      padding: 1rem;
+   }
+
+	.title-result {
+		font-size: 1.4rem;
+      padding: .3rem 1rem;
+      margin: .5rem auto;
+	}
+
+	.result > a {
+		font-size: 1.6rem;
+	}
+
+	.result > a > p {
+		font-size: 12px !important;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+   .result > a > h5 {
+      font-size: 14px;
+   }
+}

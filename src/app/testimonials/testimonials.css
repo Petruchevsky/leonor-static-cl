@@ -1,0 +1,146 @@
+.main-container-testi {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 7rem 0;
+}
+
+.empty-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-testi-empty {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.main-container-testi h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+    .main-container-testi {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    
+    .empty-testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-testi-empty {
+        width: 70%;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .main-container-testi h1 {
+        margin-bottom: 0;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .main-container-testi {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+    
+    .empty-testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-testi-empty {
+        width: 70%;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .main-container-testi h1 {
+        margin-bottom: 0;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .main-container-testi {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3rem 0;
+        flex-grow: 1;
+    }
+    
+    .empty-testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-testi-empty {
+        width: 70%;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .main-container-testi h1 {
+        margin-bottom: 0;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos Pantallas Moviles */
+@media (max-width:600px) {
+    .main-container-testi {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3rem 0;
+        flex-grow: 1;
+    }
+    
+    .empty-testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-testi-empty {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+    
+    .main-container-testi h1 {
+        margin-bottom: 0;
+    }
+}

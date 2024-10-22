@@ -1,0 +1,102 @@
+.faq-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 7rem 0;
+}
+
+.faq-container > section {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin-top: 4rem;
+}
+
+.faq-container > p {
+	margin-bottom: 3rem;
+}
+
+.faq-container > h2 {
+	margin: 3rem 0 2rem 0;
+	text-align: left;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Estilos Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.faq-container {
+		padding: 5rem 0;
+	}
+
+	.faq-container > section {
+		gap: 2rem;
+		margin-top: 4rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.faq-container {
+		width: 80%;
+		padding: 4rem 0;
+	}
+
+	.faq-container > section {
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.faq-container p {
+		margin-bottom: 2rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.faq-container {
+		width: 90%;
+		padding: 3rem 0;
+	}
+
+	.faq-container > section {
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.faq-container p {
+		margin-bottom: 2rem;
+	}
+	.faq-container h4 {
+		margin-bottom: 1rem;
+	}
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Estilos Pantallas Moviles */
+@media (max-width: 767px) {
+	.faq-container {
+		width: 95%;
+		padding: 2rem 0;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.faq-container > section {
+		gap: 1rem;
+		margin-top: 2rem;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.faq-container p {
+		margin-bottom: 2rem;
+	}
+
+	.faq-container h4 {
+		margin-bottom: 1rem;
+	}
+}

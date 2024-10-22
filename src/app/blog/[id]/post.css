@@ -1,0 +1,85 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem auto;
+    width: 80%;
+}
+
+.post-container > img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    border: solid 3px white;
+    box-shadow: 0 0 15px gray;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.post-container {
+        margin: 5rem auto;
+        width: 80%;
+    }
+    
+    .post-container > img {
+        width: 50%;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        border: solid 3px white;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.post-container {
+        margin: 4rem auto;
+        width: 80%;
+    }
+    
+    .post-container > img {
+        width: 60%;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        border: solid 2px white;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.post-container {
+        margin: 3rem auto;
+        width: 90%;
+    }
+    
+    .post-container > img {
+        width: 60%;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        border: solid 2px white;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	.post-container {
+        margin: 2rem auto;
+        width: 95%;
+    }
+    
+    .post-container > img {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        border: solid 2px white;
+    }
+}

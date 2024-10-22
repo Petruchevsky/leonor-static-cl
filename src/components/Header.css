@@ -1,0 +1,432 @@
+@font-face {
+	font-family: "Breathing";
+	src: url("/fonts/Breathing.ttf") format("truetype");
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+.logo-container {
+	width: 30%;
+	display: none;
+	justify-content: flex-start;
+}
+
+.logo-container img {
+	height: auto;
+	width: 15rem;
+	margin: 0;
+}
+
+.centerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.6rem;
+	width: 25%;
+}
+
+.leonorBcontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 5.4rem;
+}
+
+.leonorBcontainer h3 {
+	font-family: "Breathing";
+	font-weight: 100;
+	font-size: 5rem;
+	color: var(--darkgray);
+}
+
+.homeopatiaOnlineContainer {
+	line-height: 2.3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.homeopatiaOnlineContainer h2 {
+	letter-spacing: 3px;
+	background-color: transparent;
+	color: var(--pink);
+	text-transform: uppercase;
+	font-family: "Glacial Indifference";
+	font-size: 2.2rem;
+	font-weight: 300;
+}
+
+.search-container {
+	position: relative;
+	width: 30%;
+}
+
+.topHeader {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 7rem;
+}
+
+.bookHeaderContainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bookHeader {
+	font-size: 2.8rem;
+	font-weight: 400;
+	transition: all 400ms;
+	background-color: var(--pink);
+	padding: 2rem 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bookHeader:hover {
+	color: var(--lightgray);
+	background-color: var(--darkgray);
+}
+
+.bookHeader span {
+	padding: 0 0.9rem;
+	color: var(--lightgray);
+	transition: all 300ms;
+}
+
+.bookHeader span:hover {
+	color: var(--pink);
+}
+
+
+.flagContainerES,
+.flagContainerUK {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 300ms;
+	background-color: var(--pink);
+	padding: 1rem 1.5rem;
+	transition: all 300ms;
+}
+
+.uk-flag,
+.esp-flag {
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	border: solid 1px gray;
+	margin: 0;
+	filter: grayscale(40%) brightness(1.1);
+	transition: all 300ms;
+}
+
+.flagContainerES:hover,
+.flagContainerUK:hover {
+	background-color: var(--darkgray);
+	color: var(--pink);
+	cursor: pointer;
+}
+
+.uk-flag:hover,
+.esp-flag:hover {
+	border: solid 1px var(--pink);
+	filter: grayscale(0%) brightness(1.2);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	header {
+		display: flex;
+		width: 80%;
+		padding: 3rem 0;
+	}
+
+	.logo-container {
+		width: 30%;
+	}
+
+	.logo-container img {
+		width: 10rem;
+	}
+
+	.centerContainer {
+		width: 30%;
+		gap: 2rem;
+	}
+
+	.leonorBcontainer {
+		line-height: 3.3rem;
+	}
+
+	
+	.leonorBcontainer h3 {
+		font-size: 3rem;
+	}
+	
+	.homeopatiaOnlineContainer {
+		line-height: 1.6rem;
+	}
+
+	.homeopatiaOnlineContainer h2 {
+		letter-spacing: 2px;
+		font-size: 1.5rem;
+	}
+
+	.search-container {
+		width: 30%;
+	}
+
+	.topHeader {
+		height: 4.5rem;
+	}
+
+	.bookHeader {
+		font-size: 1.8rem;
+		transition: all 400ms;
+		background-color: var(--pink);
+		padding: 1rem 0;
+		height: 100%;
+	}
+
+	.flagContainerES,
+	.flagContainerUK {
+		padding: 1rem;
+		height: auto;
+	}
+	
+	.uk-flag,
+	.esp-flag {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	header {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+		padding: 2.5rem 0;
+		width: 100%;
+	}
+
+	.logo-container img {
+		width: 9rem;
+	}
+
+	.centerContainer {
+		gap: 1rem;
+	}
+
+	.leonorBcontainer {
+		line-height: 3.4rem;
+	}
+
+	.leonorBcontainer h3 {
+		font-size: 3rem;
+	}
+
+	.homeopatiaOnlineContainer {
+		line-height: 1.6rem;
+	}
+
+	.homeopatiaOnlineContainer h2 {
+		font-size: 1.4rem;
+		letter-spacing: 2px;
+	}
+
+	.topHeader {
+		height: 4rem;
+	}
+
+	.bookHeader {
+		font-size: 1.6rem;
+		transition: all 400ms;
+		background-color: var(--pink);
+		padding: 1rem 0;
+	}
+
+	.flagContainerES,
+	.flagContainerUK {
+		padding: 1rem;
+	}
+
+	.uk-flag,
+	.esp-flag {
+		height: 25px;
+		width: 25px;
+	}
+}
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
+		padding: 2.5rem 0;
+		width: 90%;
+	}
+
+	.logo-container {
+		display: none;
+	}
+
+	.logo-container img {
+		display: none;
+	}
+
+	.centerContainer {
+		width: 30%;
+		gap: 1rem;
+	}
+
+	.leonorBcontainer {
+		line-height: 3rem;
+	}
+
+	.leonorBcontainer h3 {
+		font-size: 2.6rem;
+	}
+
+	.homeopatiaOnlineContainer {
+		line-height: 1.5rem;
+	}
+
+	.homeopatiaOnlineContainer h2 {
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+	}
+
+	.search-container {
+		width: 45%;
+	}
+
+	.topHeader {
+		height: 4rem;
+	}
+
+	.bookHeader {
+		font-size: 1.6rem;
+		transition: all 400ms;
+		background-color: var(--pink);
+		padding: 1rem 0;
+	}
+
+	.flagContainerES,
+	.flagContainerUK {
+		padding: 1rem;
+	}
+
+	.uk-flag,
+	.esp-flag {
+		height: 25px;
+		width: 25px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 0 1rem 1rem 1rem;
+		width: 100%;
+		gap: 1rem;
+	}
+
+	.logo-container {
+		display: none;
+		width: 15%;
+	}
+
+	.logo-container img {
+		width: 6rem;
+	}
+
+	.centerContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 1rem;
+	}
+
+	.leonorBcontainer {
+		line-height: 2.2rem;
+	}
+
+	.leonorBcontainer h3 {
+		font-size: 2.1rem;
+	}
+
+	.homeopatiaOnlineContainer {
+		line-height: 1.2rem;
+	}
+
+	.homeopatiaOnlineContainer h2 {
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+	}
+
+	.search-container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.topHeader {
+		margin-bottom: 1rem;
+		height: auto;
+	}
+
+	.bookHeaderContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bookHeader {
+		font-size: 1.4rem;
+		transition: all 400ms;
+		background-color: var(--pink);
+		margin: 0;
+		border-radius: 0px;
+		padding: 1rem;
+	}
+
+	.flagContainerES,
+	.flagContainerUK {
+		padding: 1rem;
+	}
+
+	.uk-flag,
+	.esp-flag {
+		height: 20px;
+		width: 20px;
+	}
+}

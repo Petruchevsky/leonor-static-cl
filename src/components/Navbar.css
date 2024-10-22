@@ -1,0 +1,306 @@
+/* Estilos para pantallas XXXL */
+@media (min-width:2001px) {
+	.menu {
+		position: relative;
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav ul li a {
+		font-size: 2.5rem;
+	}
+
+	nav ul li span {
+		font-size: 2.5rem;
+	}
+
+	.dropdown-div {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.dropdownButton {
+		width: 2.5rem !important;
+		height: auto;
+	}
+
+	.dropdown-visible li a {
+		font-size: 2.5rem !important;
+	}
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+nav {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0;
+	border-bottom: solid 1px var(--darkgray);
+	position: relative;
+}
+
+.menu {
+	position: relative;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hideMenu {
+	display: flex;
+	width: 80%;
+}
+
+nav ul li {
+	display: flex;
+	justify-content: center;
+	font-size: 1.7rem;
+	width: fit-content;
+	padding: 0;
+}
+
+nav ul li a {
+	margin: 0;
+	padding: 0;
+	color: var(--darkgray);
+	transition: all 300ms;
+	text-decoration: none;
+
+}
+
+nav ul li a:hover {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	color: var(--pink)
+}
+
+nav ul li span {
+	margin: 0;
+	padding: 0;
+	color: var(--darkgray);
+	transition: all 300ms;
+}
+
+nav ul li span:hover {
+	padding: 0;
+	font-weight: 500;
+	color: var(--pink);
+	cursor: pointer;
+}
+
+.onlineHomeo {
+	display: none;
+}
+
+.burger {
+	font-size: 4rem;
+	color: var(--darkgray);
+	display: none;
+}
+
+.dropdown-li-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+	gap: .5rem;
+}
+
+.dropdown-div {
+	display: flex;
+	justify-content: center;
+	gap: .5rem;
+}
+
+.dropdownButton {
+	color: var(--darkgray);
+	display: block;
+	margin: auto 0;
+	transition: all 300ms ease-in-out;
+	width: 1.8rem;
+	height: auto;
+}
+
+.dropdownButton:hover {
+	color: var(--pink);
+	cursor: pointer;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.dropdown {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	background-color: var(--beige);
+	border-radius: 0 0 10px 10px;
+	transition: all 500ms ease-in-out !important;
+	z-index: 9999 !important;
+}
+
+.dropdown:hover {
+	background-color: var(--lightpink);
+	box-shadow: 0 0 5px var(--pink);
+}
+
+.dropdown li {
+	width: 100%;
+}
+
+.dropdown-visible li a {
+	color: var(--darkgray);
+	text-shadow: none !important;
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+.dropdown li a:hover {
+	color: var(--pink);
+	text-shadow: none !important;
+}
+
+.dropdown-visible {
+	max-height: 20rem;
+	transition: all 3s ease-in-out;
+	overflow: hidden;
+	padding: 1rem 2rem 1.5rem 2rem;
+	gap: 1rem;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+}
+
+.dropdown-hidden {
+	max-height: 0 !important;
+	overflow: hidden;
+	transition: all 2s ease-in-out;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	font-size: 1rem;
+}
+
+.dropdown-hidden li a {
+	font-size: 1rem;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+/* Estilos para Moviles */
+@media (max-width: 1000px) {
+	nav {
+		padding: 0rem;
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		padding: 0 3rem;
+	}
+
+	nav ul li {
+		font-size: 1.8rem;
+	}
+
+	.dropdown li a {
+		font-size: 1.8rem;
+	}
+
+	.dropdown-visible {
+		position: relative;
+	}
+
+	.dropdown-visible li a {
+		position: relative;
+	}
+
+	.dropdown-hidden {
+		position: relative;
+	}
+
+	.dropdown-hidden li a {
+		position: relative;
+		font-size: .5rem;
+	}
+
+	.overlay {
+		box-shadow: 0 0 0 100vmax rgb(0,0,0,.6);
+		border: none;
+	}
+
+	.mobileNav {
+		padding: .6rem 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+
+	.onlineHomeo {
+		font-size: 1.8rem;
+		display: block;
+		color: var(--darkgray);
+		font-family: "raleway";
+		font-weight: 500;
+	}
+
+	.burger {
+		font-size: 3.4rem;
+		display: block;
+		cursor: pointer;
+	}
+
+	.showMenu {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		opacity: 1;
+		transition: all 300ms ease-in-out;
+		position: absolute;
+		top: 100%;
+		left: 6%;
+	}
+
+	.hideMenu {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		opacity: 0;
+		transition: all 300ms ease-in-out;
+		position: absolute;
+		top: 150%;
+		left: 6%;
+		pointer-events: none;
+		cursor: default;
+	}
+
+	.menu {
+		gap: 2.5rem !important;
+		background: var(--lightpink);
+		border-radius: 10px;
+		box-shadow: 0 0 5px var(--pink);
+		padding: 0.5rem 1.5rem;
+		width: 85%;
+		z-index: 1000;
+	}
+
+	.menu li {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.menu li:last-child {
+		margin-bottom: 1rem;
+	}
+
+	.menu li:first-child {
+		margin-top: 1rem;
+	}
+}

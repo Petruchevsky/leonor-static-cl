@@ -1,0 +1,150 @@
+.container-gallery {
+    width: 100%;
+    height: auto;
+    padding: 7rem 0;
+}
+
+.container-gallery-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container-gallery h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.img-gallery {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.gallery-description {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+    .container-gallery {
+        width: 100%;
+        height: 100%;
+        padding: 5rem 0;
+    }
+    
+    .container-gallery h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-description {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+
+    .container-gallery {
+        width: 100%;
+        height: 100%;
+        padding: 3rem 0 5rem 0;
+    }
+
+    .container-gallery-empty {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .container-gallery h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .img-gallery {
+        width: 80%;
+    }
+
+    .gallery-description {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.container-gallery {
+        width: 100%;
+        height: 100%;
+        padding: 3rem 0 2rem 0;
+        flex-grow: 1;
+    }
+
+    .container-gallery-empty {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .container-gallery h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .img-gallery {
+        width: 90%;
+    }
+
+    .gallery-description {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Estilos Pantallas Moviles */
+
+@media (max-width: 767px) {
+
+    .container-gallery {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        flex-grow: 1;
+    }
+
+    .container-gallery-empty {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .container-gallery h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .img-gallery {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .gallery-description {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+}

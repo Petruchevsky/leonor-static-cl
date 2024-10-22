@@ -1,0 +1,509 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--lightpink);
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.book-footer {
+	font-size: 3.2rem;
+	background: transparent;
+	transition: all 300ms ease-in-out;
+	padding: 1rem 0 0 0;
+}
+
+.container-footer section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 2rem 2rem 2rem;
+}
+
+.book-footer span:hover {
+	color: var(--darkgray);
+}
+
+.book-footer:hover {
+	color: var(--pink);
+	width: 100%;
+	margin: auto 0;
+	transform: scale(1.02);
+}
+
+.logo-footer {
+	width: 13rem;
+	height: auto;
+	margin-bottom: 2rem;
+	margin-right: 8rem;
+	display: none;
+}
+
+.leonorContainerFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	transition: all 300ms ease-in-out;
+}
+
+.leonorContainerFooter:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.leonorBcontainerFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 5.5rem;
+}
+
+.leonorBFooter {
+	font-family: "Breathing";
+	font-weight: 100;
+	font-size: 5rem;
+	color: var(--darkgray);
+}
+
+.HOnlineContainerFooter {
+	line-height: 2rem;
+}
+
+.onlineHomeopathFooter {
+	letter-spacing: 3px;
+	background-color: transparent;
+	color: var(--pink);
+	text-transform: uppercase;
+	font-family: "Glacial Indifference";
+	font-size: 2.2rem;
+	font-weight: 300;
+}
+
+.RRSS-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 400ms;
+	gap: 1rem;
+}
+
+.icons-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.icon-f {
+	transition: all 300ms;
+	filter: grayscale(70%) brightness(1.7);
+	padding: 0;
+	margin: 0;
+	width: 70px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.icon-i {
+	transition: all 300ms;
+	filter: grayscale(70%) brightness(1.7);
+	padding: -5px;
+	margin: 0;
+	width: 70px;
+	height: auto;
+}
+
+.icon-f:hover,
+.icon-i:hover {
+	transform: scale(1.1);
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
+.developedBy {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	padding: .5rem 0;
+}
+
+.developedBy a {
+	font-size: 1.8rem;
+	color: var(--pink);
+	transition: all 300ms;
+	letter-spacing: 1px;
+}
+
+.developedBy a:hover {
+	color: white;
+	font-weight: bold;
+	transform: scale(1.03);
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
+	.container-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.book-footer {
+		font-size: 2.4rem;
+		background: transparent;
+		transition: all 300ms;
+		padding: 1rem 0 0 0;
+	}
+	
+	.container-footer section {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3rem 2rem 2rem 2rem;
+	}
+	
+	.logo-footer {
+		width: 13rem;
+		height: auto;
+		margin-bottom: 2rem;
+		margin-right: 8rem;
+		display: none;
+	}
+	
+	.leonorContainerFooter {
+		gap: 2rem;
+	}
+	
+	.leonorContainerFooter:hover {
+		cursor: pointer;
+	}
+	
+	.leonorBcontainerFooter {
+		line-height: 3.3rem;
+	}
+	
+	.leonorBFooter {
+		font-size: 3rem;
+	}
+	
+	.HOnlineContainerFooter {
+		line-height: 1.6rem;
+	}
+	
+	.onlineHomeopathFooter {
+		letter-spacing: 2px;
+		font-size: 1.5rem;
+	}
+	
+	.icon-f {
+		width: 50px;
+		border-radius: 10px;
+	}
+	
+	.icon-i {
+		width: 52px;
+		border-radius: 10px;
+	}
+	
+	.icon-f:hover,
+	.icon-i:hover {
+		transform: scale(1.1);
+		filter: grayscale(0);
+		cursor: pointer;
+	}
+	
+	.developedBy a {
+		font-size: 1.2rem;
+	}
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.container-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.book-footer {
+		font-size: 2rem;
+	}
+	
+	.container-footer section {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3rem 1rem 2rem 1rem;
+	}
+	
+	.logo-footer {
+		width: 13rem;
+		height: auto;
+		margin-bottom: 2rem;
+		margin-right: 8rem;
+		display: none;
+	}
+	
+	.leonorContainerFooter {
+		gap: 1rem;
+	}
+	
+	.leonorContainerFooter:hover {
+		cursor: pointer;
+	}
+	
+	.leonorBcontainerFooter {
+		line-height: 2.8rem;
+	}
+	
+	.leonorBFooter {
+		font-size: 2.5rem;
+	}
+	
+	.HOnlineContainerFooter {
+		line-height: 1.3rem;
+	}
+	
+	.onlineHomeopathFooter {
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+	
+	.icon-f {
+		width: 40px;
+		border-radius: 10px;
+	}
+	
+	.icon-i {
+		width: 42px;
+		border-radius: 10px;
+	}
+	
+	.icon-f:hover,
+	.icon-i:hover {
+		transform: scale(1.1);
+		filter: grayscale(0);
+		cursor: pointer;
+	}
+	
+	.developedBy a {
+		font-size: 1.1rem;
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.container-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.book-footer {
+		font-size: 2rem;
+	}
+	
+	.container-footer section {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3rem 1rem 2rem 1rem;
+	}
+	
+	.logo-footer {
+		width: 13rem;
+		height: auto;
+		margin-bottom: 2rem;
+		margin-right: 8rem;
+		display: none;
+	}
+	
+	.leonorContainerFooter {
+		gap: 1rem;
+	}
+	
+	.leonorContainerFooter:hover {
+		cursor: pointer;
+	}
+	
+	.leonorBcontainerFooter {
+		line-height: 2.8rem;
+	}
+	
+	.leonorBFooter {
+		font-size: 2.5rem;
+	}
+	
+	.HOnlineContainerFooter {
+		line-height: 1.3rem;
+	}
+	
+	.onlineHomeopathFooter {
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+
+	.RRSS-container {
+		gap: .3rem;
+	}
+
+	.icons-container {
+		gap: .5rem;
+	}
+	
+	.icon-f {
+		width: 40px;
+		border-radius: 10px;
+	}
+	
+	.icon-i {
+		width: 42px;
+		border-radius: 10px;
+	}
+	
+	.icon-f:hover,
+	.icon-i:hover {
+		transform: scale(1.1);
+		filter: grayscale(0);
+		cursor: pointer;
+	}
+	
+	.developedBy a {
+		font-size: 1.1rem;
+	}
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.container-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	.book-footer {
+		padding: 0.5rem 0 0 0;
+		font-size: 1.8rem;
+	}
+
+	.container-footer section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	.logo-footer {
+		display: none;
+	}
+
+	.leonorContainerFooter {
+		gap: .7rem;
+		margin-bottom: .7rem;
+	}
+
+	.leonorBcontainerFooter {
+		line-height: 2.4rem;
+	}
+
+	.leonorBFooter {
+		font-size: 2.3rem;
+	}
+
+	.HOnlineContainerFooter {
+		line-height: 1.2rem;
+	}
+
+
+	.onlineHomeopathFooter {
+		letter-spacing: 1px;
+		font-size: 1.3rem;
+	}
+
+	.RRSS-container {
+		gap: .2rem;
+		border-radius: 10px;
+		margin-top: 1.5rem;
+	}
+
+	.RRSS-container h2 {
+		font-size: 1.8rem;
+	}
+
+	.icons-container {
+		gap: .5rem;
+	}
+
+	.icon-i {
+		width: 35px;
+	}
+
+	.icon-f {
+		width: 35px;
+		border-radius: 10px;
+	}
+
+	.developedBy {
+		padding: 0.4rem .5rem;
+		justify-content: space-between;
+	}
+
+	.developedBy a {
+		font-size: 6.5px;
+	}
+}
