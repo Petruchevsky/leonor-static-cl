@@ -184,7 +184,7 @@
 /* Estilos para Móviles */
 @media (max-width: 767px) {
    .search-results {
-      top: 35;
+      top: 35px;
       border: solid 3px var(--lightgray);
    }
    
