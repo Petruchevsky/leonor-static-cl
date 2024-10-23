@@ -42,7 +42,7 @@
 
 .post img {
     width: 20%;
-    height: auto;
+    height: 100%;
     aspect-ratio: 1/1;
     border-radius: 20px;
 }
