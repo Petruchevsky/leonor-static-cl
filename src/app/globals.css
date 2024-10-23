@@ -359,6 +359,8 @@ form {
 		font-size: 1.4rem;
 		padding: .7rem 1.5rem;
 		border-radius: 6px;
+    text-align: center;
+    width: 100%;
 	}
 	
 	form {
@@ -426,6 +428,8 @@ form {
 		font-size: 1.4rem;
 		padding: .7rem 1.5rem;
 		border-radius: 5px;
+    text-align: center;
+    width: 100%;
 	}
 	
 	form {
