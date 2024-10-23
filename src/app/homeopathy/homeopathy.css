@@ -33,8 +33,7 @@
     }
     
     .what-is-h {
-        display: flex;
-        flex-direction: column;
+
         gap: 5rem;
         width: 100%;
     }
@@ -60,8 +59,7 @@
     }
     
     .what-is-h {
-        display: flex;
-        flex-direction: column;
+
         gap: 4rem;
         width: 100%;
     }
@@ -98,6 +96,16 @@
         border-radius: 20px;
         aspect-ratio: 5/2;
     }
+
+    .homeo-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .homeo-text h1 {
+        display: flex;
+    }
 }
 
 
@@ -126,7 +134,14 @@
         aspect-ratio: 4/2;
     }
 
+    .homeo-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
     .homeo-text h1 {
         text-align: left;
     }
+    
 }    

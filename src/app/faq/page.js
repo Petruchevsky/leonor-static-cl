@@ -46,12 +46,12 @@ async function Consultations() {
 					</article>
 				))}
 			</section>
-			<section>
+			<div>
 				<h1>No dudes en comunicarte si tienes más preguntas que no se hayan abordado aquí.</h1>
 				<Link className="link-button" href="/contact">
 					Contáctame!
 				</Link>
-			</section>
+			</div>
 		</main>
 	);
 }

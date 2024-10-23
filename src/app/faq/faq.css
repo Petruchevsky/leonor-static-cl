@@ -64,6 +64,13 @@
 		margin-top: 2rem;
 	}
 
+	.faq-container > div {
+		display: flex;
+		flex-direction: column;
+		gap: 0rem;
+		margin-top: 1rem;
+	}
+
 	.faq-container p {
 		margin-bottom: 2rem;
 	}
@@ -80,8 +87,8 @@
 		width: 95%;
 		padding: 2rem 0;
 		justify-content: center;
-		align-items: center;
-		text-align: center;
+		align-items: flex-start;
+		text-align: left;
 	}
 
 	.faq-container > section {
@@ -90,6 +97,13 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.faq-container > div {
+		display: flex;
+		flex-direction: column;
+		gap: 0rem;
+		margin-top: 1rem;
 	}
 
 	.faq-container p {

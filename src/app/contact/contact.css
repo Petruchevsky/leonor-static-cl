@@ -4,100 +4,125 @@
 	padding: 7rem 0;
     display: flex;
     justify-content: space-around;
+	 align-items: center;
 }
 
-.contact-container > section {
+.text-section {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 40%;
+	border: solid 3px var(--lightgray);
+	padding: 6rem;
+	border-radius: 20px;
+	box-shadow: 0 0 15px gray;
+}
+
+.form-section {
 	width: 40%;
 }
 
 
-.contact-container > section > h1 {
-	margin-bottom: 2rem;
+.text-section > p {
+	text-align: center;
+}
+
+.text-section > .link-button {
+	margin-bottom: 3rem;
 }
 
 
-.contact-container > section > p {
-	margin-bottom: 2rem;
-	text-align: left;
-	width: 80%;
-}
-
-.contact-container > section > .link-button {
-	margin-bottom: 2rem;
-}
-
-
-
-
-/* ------------------------------------------------------------------------------------------ */
-/* Estilos Pantallas Grandes */
-
-@media (max-width: 2000px) and (min-width: 1025px) {
-	
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2000px) and (min-width: 1440px) {
 	.contact-container {
 		padding: 5rem 0;
+		justify-content: space-around;
 	}
-
-	.contact-container > section {
-		display: flex;
-		flex-direction: column;
+	
+	.text-section {
+		padding: 6rem 4rem;
+	}
+	
+	.form-section {
 		width: 40%;
 	}
-
-	.contact-container > section > p {
-		margin-bottom: 2rem;
-		text-align: left;
-		width: 100%;
-	}
-}
-
-/* ------------------------------------------------------------------------------------------ */
-/* Estilos Laptop-Tablet */
-
-@media (max-width: 1024px) and (min-width: 601px) {
 	
-	.contact-container {
-		width: 80%;
-		padding: 5rem 0;
-	}
-
-	.contact-container > section {
-		display: flex;
-		flex-direction: column;
-		width: 50%;
+	.text-section > .link-button {
+		margin-bottom: 3rem;
 	}
 }
-/* ------------------------------------------------------------------------------------------ */
-/* Estilos Pantallas Moviles */
 
-@media (max-width: 600px) {
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
 	.contact-container {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 2rem 1rem;
+		padding: 5rem 0;
+		justify-content: space-between;
 	}
-
-	.contact-container > section {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		width: 100%;
-		text-align: left;
+	
+	.text-section {
+		width: 45%;
+		padding: 4rem 3rem;
 	}
-
-	.contact-container > section > p {
-		margin-bottom: 1rem;
-		text-align: left;
-		width: 100%;
+	
+	.form-section {
+		width: 45%;
 	}
+	
+	.text-section > .link-button {
+		margin-bottom: 3rem;
+	}
+}
 
-	.contact-container > section > p:last-child {
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.contact-container {
+		width: 90%;
+		padding: 5rem 0;
+		justify-content: space-between;
+	}
+	
+	.text-section {
+		width: 48%;
+		padding: 3rem 1rem;
+	}
+	
+	.form-section {
+		width: 48%;
+	}
+	
+	.text-section > .link-button {
 		margin-bottom: 2rem;
-		text-align: left;
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	.contact-container {
+		width: 95%;
+		padding: 2rem 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	
+	.text-section {
 		width: 100%;
+		padding: 3rem 1rem;
+	}
+	
+	.form-section {
+		width: 100%;
+	}
+	
+	.text-section > .link-button {
+		margin-bottom: 2rem;
 	}
 }

@@ -10,7 +10,7 @@ export const metadata = {
 function Contact() {
 	return (
 		<main className="contact-container">
-			<section>
+			<section className="text-section">
 				<h1>Mantente en Contacto</h1>
 				<p>Puedes escribirme vía e-mail.</p>
 				<Link
@@ -21,15 +21,15 @@ function Contact() {
 					contacto@leonorb-homeopata.com
 				</Link>
 				<p>
-					Mi horario de trabajo es de Lunes a Viernes (Excepto Miércoles) de 10 am a 5 pm
-					GMT 3 (Chile).{" "}
+					Mi horario de trabajo es de Lunes a Viernes (Excepto Miércoles) de 10
+					am a 5 pm GMT 3 (Chile).{" "}
 				</p>
 				<p>Haré lo mejor para responder tus consultas lo antes posible.</p>
 			</section>
 
-            <section>
-                <FormContact />
-            </section>
+			<section className="form-section">
+				<FormContact />
+			</section>
 		</main>
 	);
 }

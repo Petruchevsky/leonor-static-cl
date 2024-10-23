@@ -4,9 +4,6 @@
     padding: 7rem 0;
 }
 
-.consultations-container p {
-    margin-bottom: 3rem;
-}
 
 /* ------------------------------------------------------------------------------------------ */
 /* Estilos Pantallas Grandes */
@@ -27,11 +24,10 @@
     .consultations-container {
         width: 100%;
         padding: 3rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .consultations-container p {
-        margin-bottom: 2rem;
-    }
 }
 /* ------------------------------------------------------------------------------------------ */
 /* Estilos Pantallas Moviles */
@@ -40,11 +36,9 @@
 
     .consultations-container {
         width: 100%;
-        padding: 2rem;
-    }
-
-    .consultations-container p {
-        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 
