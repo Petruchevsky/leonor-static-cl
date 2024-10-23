@@ -24,13 +24,55 @@ export async function POST(request) {
         subject: subject,
         replyTo: email,
         html: `
-            <div>
-                <h2>${subject}</h2>
-                <h4>${message}</h4>
-                <br/><br/><br/><br/>
-                <h5>Este mensaje fue enviado por ${name} a través del formulario de contacto de Leonor Berdichevsky Homeopata Online.</h5>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                .container {
+                    width: 100%;
+                    padding: 20px;
+                    background-color: #F7B4ECFF;
+                    font-family: Arial, sans-serif;
+                    color: black;
+                }
+                .header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .content {
+                    margin: 20px;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 5px;
+                }
+                .footer {
+                    text-align: center;
+                    padding: 10px;
+                    background-color: #ddd;
+                    margin-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h2>${subject}</h2>
+                    <h5>Mensaje enviado desde ${email}</h5>
+                </div>
+                <div class="content">
+                    <p>${message}</p>
+                    <br/><br/><br/><br/>
+                    <p>Este mensaje fue enviado por ${name} a través del formulario de contacto de Leonor Berdichevsky Homeopata Online.</p>
+                </div>
+                <div class="footer">
+                    <p>&copy; 2024 Leonor Berdichevsky. Todos los derechos reservados.</p>
+                </div>
             </div>
-        `,
+        </body>
+        </html>
+    `,
     };
 
     try {

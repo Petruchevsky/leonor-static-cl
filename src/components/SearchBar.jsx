@@ -42,6 +42,11 @@ function SearchBar() {
       if (e.key === "Enter") {
          e.preventDefault();
       }
+      if (e.key === "Escape") {
+         e.preventDefault();
+			setShowResults(false)
+			setQuery("")
+      }
    }
 
 	return (
