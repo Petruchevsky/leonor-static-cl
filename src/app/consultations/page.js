@@ -19,7 +19,7 @@ function Consultations() {
 				href={`${process.env.SETMORE}`}
 				target="_blank"
 			>
-				Reserva tu Hora{" "}
+				Reserva tu Hora Aquí{" "}
 			</Link>
 
 		</main>

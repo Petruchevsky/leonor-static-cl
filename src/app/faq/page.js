@@ -49,7 +49,7 @@ async function Consultations() {
 			<section>
 				<h1>No dudes en comunicarte si tienes más preguntas que no se hayan abordado aquí.</h1>
 				<Link className="link-button" href="/contact">
-					Contáctame
+					Contáctame!
 				</Link>
 			</section>
 		</main>

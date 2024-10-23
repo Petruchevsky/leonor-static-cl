@@ -52,7 +52,7 @@ function Homeopathy() {
 				</section>
 
 			<Link className="link-button" href="/blog">
-				For more information, visit my Blog
+				Para más información, visita mi Blog
 			</Link>
 			</section>
 		</main>
