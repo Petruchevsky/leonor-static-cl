@@ -26,14 +26,14 @@ async function Post({ params }) {
 	return (
 		<main className="post-container">
 			<h1>{title}</h1>
-			<p>Creado por Leonor Berdichevsky</p>
+			<p className="createdAndDate">Creado por Leonor Berdichevsky</p>
 			<Image
 				src={image}
 				alt={`imagen de ${title}`}
 				width={2000}
 				height={2000}
 			/>
-			<p>{date}</p>
+			<p className="createdAndDate">{date}</p>
 			<p>{content}</p>
 			<Link href="/blog" className="link-button">Volver al Blog</Link>
 		</main>

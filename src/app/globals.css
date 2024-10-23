@@ -158,7 +158,7 @@ input[type="submit"]:hover {
 	background-color: var(--pink);
 	color:  var(--lightgray);
 	transition: all 300ms;
-	width: fit-content;
+  text-align: center;
 }
 
 .link-button:hover {

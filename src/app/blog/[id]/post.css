@@ -65,6 +65,11 @@
         border-radius: 10px;
         border: solid 2px white;
     }
+
+    .createdAndDate {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 
@@ -81,5 +86,10 @@
         margin-bottom: 2rem;
         border-radius: 10px;
         border: solid 2px white;
+    }
+
+    .createdAndDate {
+        text-align: center;
+        width: 100%;
     }
 }
